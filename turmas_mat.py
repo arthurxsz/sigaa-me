@@ -8,9 +8,9 @@ import asyncio
 
 # Configuração Chrome
 chrome_options = Options()
-# chrome_options.add_argument("--no-sandbox")
-# chrome_options.add_argument("--headless")
-# chrome_options.add_argument("--disable-gpu")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--disable-gpu")
 
 # Inicializa o WebDriver com as opções headless
 driver = webdriver.Chrome(options=chrome_options)
